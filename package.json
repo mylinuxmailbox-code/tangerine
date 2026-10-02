@@ -1,0 +1,26 @@
+{
+  "name": "tangerine",
+  "version": "0.1.0",
+  "description": "Low-overhead execution and optimization control plane for running Android x86_64 workloads on resource-constrained Linux desktops.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "bin": { "tangerine": "./bin/tangerine.js" },
+  "engines": { "node": ">=18.18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test --test-reporter=spec \"dist/test/**/*.test.js\"",
+    "start": "node bin/tangerine.js",
+    "doctor": "node bin/tangerine.js doctor"
+  },
+  "dependencies": {
+    "ink": "^5.2.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "typescript": "~5.6.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "performance": { "profile": "balanced", "useSystemdScope": true, "disableCompositor": false },
+  "runtime": {
+    "executable": "/opt/android/launch.sh",
+    "args": [],
+    "stopTimeoutMs": 8000,
+    "fpsFromStderr": false
+  },
+  "graphics": { "backend": "auto", "vsync": true, "shaderCache": true, "glthread": false },
+  "cpu": {
+    "affinity": { "enabled": false, "strategy": "none" },
+    "scheduler": "normal",
+    "allowRealtime": false,
+    "nice": 0,
+    "background": []
+  },
+  "memory": { "monitor": true, "swapMonitoring": true, "cacheManagement": false, "highPercent": 80 },
+  "sandbox": { "enabled": true, "backend": "auto", "exposeHome": false, "failIfDegraded": false },
+  "network": { "mode": "blocked", "allow": [] },
+  "monitoring": { "cpuIntervalMs": 1000, "memoryIntervalMs": 2000, "processIntervalMs": 2000, "gpuIntervalMs": 2000, "fpsIntervalMs": 1000 },
+  "ui": { "enabled": true, "refreshMs": 500 },
+  "logging": { "level": "info", "toFile": true }
+}
